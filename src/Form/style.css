@@ -52,13 +52,3 @@
     background-color: rgb(206, 50, 102);
     box-shadow: 10px 10px 21px -6px #F25292;
 }
-
-.form__paragraph {
-    font-weight: bold;
-    text-align: center;
-    padding: 10px;
-    background-color: rgb(255, 254, 254);
-    border: 1px solid black; 
-    box-shadow: 5px 5px 12px -9px #000000;
-    min-height: 40px;
-}

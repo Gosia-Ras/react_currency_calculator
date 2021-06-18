@@ -28,8 +28,6 @@ const Form = () => (
                         </select>
                     </label>
                 </p>
-
-                <p className="form__paragraph js-form__paragraph--result"></p>
             </fieldset>
             <p>
                 <button className="form__button" type="submit">Calculate</button>
