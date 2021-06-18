@@ -45,6 +45,7 @@
     color: rgb(255, 251, 251);
     border-radius: 10px;
     font-weight: bold;
+    margin-right: 5px
 }
 
 .form__button:hover {
