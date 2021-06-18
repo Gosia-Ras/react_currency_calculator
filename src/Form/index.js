@@ -29,10 +29,6 @@ const Form = () => (
                     </label>
                 </p>
             </fieldset>
-            <p>
-                <button className="form__button" type="submit">Calculate</button>
-                <button className="form__button" type="reset">Reset</button>
-            </p>
         </form>
 );
 
