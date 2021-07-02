@@ -1,11 +1,13 @@
-import "./style.css";
+export const Result = ({ result }) => (
+    <p className="result">
+        {result !== undefined && (
+            <>
+            {result.sourceAmount.toFixed(2)}&nbsp;=&nbsp;
 
-const Result = ({ result }) => (
-    result !== undefined && (
-        <p className="result">
-            You receive {result.value.toFixed(2)} {result.currency}
-        </p>
-    )
+            <strong>
+                {result.targetAmount.toFixed(2)}&nbsp;{result.currency}
+            </strong>
+            </>
+        )}
+    </p>
 );
-
-export default Result;
