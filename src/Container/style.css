@@ -1,4 +1,7 @@
 .container {
+    background-color: whitesmoke;
+    border-radius: 25px;
+    box-shadow: 10px 10px 13px -7px #777576;
     display: grid;
     grid-template-rows: auto 1fr;
     grid-gap: 10px;
