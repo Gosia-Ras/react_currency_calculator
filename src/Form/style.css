@@ -3,34 +3,20 @@
     font-family: 'Lato', sans-serif;
 }
 
-.gridContainer {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: 1fr 0fr;
-}
-
 .form__fieldset {
     border: none;
-    justify-self: stretch;
-}
-
-.form__legend {
-    background-color: palevioletred;
-    color: rgb(255, 251, 251);
-    border-radius: 10px;
-    padding: 3%;
-    font-weight: bold;
 }
 
 .form__labelText {
-    width: 150px;
     background-color: white;
     padding: 10px;
     border: 1px solid black;
+    margin-right: 15px;
 }
 
 .form__field {
     padding: 10px;
+    margin-top: 10px;
 }
 
 .form__field:required {
