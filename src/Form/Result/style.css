@@ -8,6 +8,8 @@
 
 .form__button {
     border: 1px black solid;
+    background-color: rgb(255, 254, 254);
+    box-shadow: 5px 5px 12px -9px #000000;
     padding: 10px;
 }
 
@@ -21,6 +23,6 @@
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: normal;
-    align-items: normal;
+    align-items: center;
     align-content: normal;
 }
