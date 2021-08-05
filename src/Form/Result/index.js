@@ -1,13 +1,14 @@
-export const Result = ({ result }) => (
-    <p className="result">
-        {result !== undefined && (
-            <>
-            {result.sourceAmount.toFixed(2)}&nbsp;=&nbsp;
+import "./style.css";
 
-            <strong>
-                {result.targetAmount.toFixed(2)}&nbsp;{result.currency}
-            </strong>
-            </>
-        )}
-    </p>
+export const Result = ({ result }) => (
+  <p className="resultParagraph">
+    {result !== undefined && (
+      <>
+        <strong>
+          You receive&nbsp;
+          {result.targetAmount.toFixed(2)}&nbsp;{result.currency}
+        </strong>
+      </>
+    )}
+  </p>
 );

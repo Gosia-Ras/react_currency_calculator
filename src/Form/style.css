@@ -1,12 +1,17 @@
 .form {
     margin-top: 20px;
     font-family: 'Lato', sans-serif;
-    
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 0fr;
 }
 
 .form__fieldset {
-    border: 1px solid rgb(105, 109, 109);
-
+    border: none;
+    justify-self: stretch;
 }
 
 .form__legend {
@@ -18,17 +23,13 @@
 }
 
 .form__labelText {
-    display: inline-block;
     width: 150px;
-    margin-right: 35px;
     background-color: white;
     padding: 10px;
     border: 1px solid black;
-    box-shadow: 5px 5px 12px -9px #000000;
 }
 
 .form__field {
-    max-width: 200px;
     padding: 10px;
 }
 
