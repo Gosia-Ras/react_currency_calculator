@@ -1,12 +1,10 @@
 .form {
     margin-top: 20px;
     font-family: 'Lato', sans-serif;
-    
 }
 
 .form__fieldset {
     border: none;
-
 }
 
 .form__legend {
@@ -33,4 +31,19 @@
 
 .form__field:required {
     border-color: rgb(224, 107, 107);
+}
+
+.flex-container {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.flex-items {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .flex-items {
+        margin-bottom: 5px;
+    }
 }

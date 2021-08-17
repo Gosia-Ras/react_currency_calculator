@@ -15,17 +15,17 @@ export const Form = ({ calculateResult, result }) => {
   return (
     <form className="form" onSubmit={onSubmit}>
       <fieldset className="form__fieldset">
-        <div className="gridContainer">
+          <div className="flex-container">
           <p>
             <label>
-              <span className="form__labelText">PLN*</span>
+              <span className="form__labelText flex-items">PLN*</span>
               <input
                 value={amount}
                 onChange={({ target }) => setAmount(target.value)}
                 step="any"
                 min="1"
                 max="1000000000"
-                className="form__field"
+                className="form__field flex-items"
                 placeholder="Enter the amount in PLN"
                 type="number"
                 required
@@ -34,9 +34,9 @@ export const Form = ({ calculateResult, result }) => {
           </p>
           <p>
             <label>
-              <span className="form__labelText">Currency</span>
+              <span className="form__labelText flex-items">Currency</span>
               <select
-                className="form__field"
+                className="form__field flex-items"
                 value={currency}
                 onChange={({ target }) => setCurrency(target.value)}
               >
@@ -48,7 +48,7 @@ export const Form = ({ calculateResult, result }) => {
               </select>
             </label>
           </p>
-        </div>
+          </div>
       </fieldset>
       <div className="flexContainer">
       <button className="form__button" type="submit">
