@@ -4,7 +4,9 @@
 }
 
 .form__fieldset {
-    border: none;
+    border-radius: 5px 10px;
+    margin: 20px 0px;
+    background-color: rgb(245, 245, 245);
 }
 
 .form__legend {
@@ -15,30 +17,20 @@
     font-weight: bold;
 }
 
-.form__labelText {
-    display: inline-block;
-    width: 150px;
-    margin-right: 35px;
-    background-color: white;
-    padding: 10px;
-    border: 1px solid black;
-    box-shadow: 5px 5px 12px -9px #000000;
-}
-
 .form__field {
     padding: 10px;
+    background-color: white;
+    max-width: 250px;
+    border-radius: 4px;
+    width: 100%;
 }
 
 .form__field:required {
     border-color: rgb(224, 107, 107);
 }
 
-.flex-container {
-    display: inline-flex;
-    flex-direction: column;
-}
-
-.flex-items {
-    display: block;
-    margin-bottom: 5px;
+.form__label {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
