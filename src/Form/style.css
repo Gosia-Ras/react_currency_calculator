@@ -40,10 +40,5 @@
 
 .flex-items {
     display: block;
-}
-
-@media (max-width: 768px) {
-    .flex-items {
-        margin-bottom: 5px;
-    }
+    margin-bottom: 5px;
 }
