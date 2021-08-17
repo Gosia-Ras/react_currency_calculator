@@ -42,7 +42,7 @@ export const Form = ({ calculateResult, result }) => {
               >
                 {currencies.map((currency) => (
                   <option key={currency.short} value={currency.short}>
-                    {currency.name}
+                    {currency.short}
                   </option>
                 ))}
               </select>
