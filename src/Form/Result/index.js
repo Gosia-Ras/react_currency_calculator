@@ -2,7 +2,7 @@ import "./style.css";
 
 export const Result = ({ result }) => (
   <p className="resultParagraph">
-    {result !== undefined && (
+    {result && (
       <>
         <strong>
           You receive&nbsp;

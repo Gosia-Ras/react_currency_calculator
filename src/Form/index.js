@@ -3,14 +3,35 @@ import "./style.css";
 import { Result } from "./Result";
 import { currencies } from "../currencies";
 
-export const Form = ({ calculateResult, result }) => {
+
+export const Form = () => {
   const [currency, setCurrency] = useState(currencies[0].short);
   const [amount, setAmount] = useState("");
 
+  const [result, setResult] = useState();
+
+  const calculateResult = (currency, amount) => {
+    const rate = currencies
+    .find(({ short }) => short === currency)
+    .rate;
+
+    setResult({
+      sourceAmount: +amount,
+      targetAmount: amount / rate,
+      currency,
+    });
+
+  }
   const onSubmit = (event) => {
     event.preventDefault();
     calculateResult(currency, amount);
   };
+
+  const onClickReset = () => {
+    setAmount("");
+    setResult("");
+};
+
 
   return (
     <form className="form" onSubmit={onSubmit}>
@@ -55,6 +76,7 @@ export const Form = ({ calculateResult, result }) => {
         Calculate
       </button>
       <Result result={result} />
+      <button type="reset" className="form_button" onClick={onClickReset}>Clear form</button>
       </div>
     </form>
   );
