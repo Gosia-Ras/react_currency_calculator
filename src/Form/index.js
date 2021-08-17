@@ -32,7 +32,6 @@ export const Form = () => {
   return (
     <form className="form" onSubmit={onSubmit}>
       <fieldset className="form__fieldset">
-        <p>
           <label className="form__label">
             <p>Amount in PLN*:</p>
             <input
@@ -47,8 +46,6 @@ export const Form = () => {
               required
             />
           </label>
-        </p>
-        <p>
           <label className="form__label">
             <p>Currency</p>
             <select
@@ -63,7 +60,6 @@ export const Form = () => {
               ))}
             </select>
           </label>
-        </p>
       </fieldset>
       <div className="flexContainer">
         <Result result={result} />
