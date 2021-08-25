@@ -1,7 +1,9 @@
 import "./style.css";
 
 const Footer = ({ title }) => (
-    <footer className="footer">{title}</footer>
+    <footer className="footer">
+        {title}
+    </footer>
 );
 
 export default Footer;

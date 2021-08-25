@@ -18,7 +18,7 @@ export const Form = () => {
       currency,
     });
   };
-  
+
   const onSubmit = (event) => {
     event.preventDefault();
     calculateResult(currency, amount);
@@ -33,34 +33,34 @@ export const Form = () => {
   return (
     <form className="form" onSubmit={onSubmit}>
       <fieldset className="form__fieldset">
-          <label className="form__label">
-            <p>Amount in PLN*:</p>
-            <input
-              value={amount}
-              onChange={({ target }) => setAmount(target.value)}
-              step="any"
-              min="1"
-              max="1000000000"
-              className="form__field"
-              placeholder="Enter the amount in PLN"
-              type="number"
-              required
-            />
-          </label>
-          <label className="form__label">
-            <p>Currency</p>
-            <select
-              className="form__field"
-              value={currency}
-              onChange={({ target }) => setCurrency(target.value)}
-            >
-              {currencies.map((currency) => (
-                <option key={currency.short} value={currency.short}>
-                  {currency.short}
-                </option>
-              ))}
-            </select>
-          </label>
+        <label className="form__label">
+          <p>Amount in PLN*:</p>
+          <input
+            value={amount}
+            onChange={({ target }) => setAmount(target.value)}
+            step="any"
+            min="1"
+            max="1000000000"
+            className="form__field"
+            placeholder="Enter the amount in PLN"
+            type="number"
+            required
+          />
+        </label>
+        <label className="form__label">
+          <p>Currency</p>
+          <select
+            className="form__field"
+            value={currency}
+            onChange={({ target }) => setCurrency(target.value)}
+          >
+            {currencies.map((currency) => (
+              <option key={currency.short} value={currency.short}>
+                {currency.short}
+              </option>
+            ))}
+          </select>
+        </label>
       </fieldset>
       <div className="flexContainer">
         <Result result={result} />

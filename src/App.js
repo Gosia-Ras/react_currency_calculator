@@ -4,9 +4,7 @@ import { Form } from "./Form";
 import Footer from "./Footer";
 import Clock from "./Clock";
 
-
-function App () {
-
+function App() {
   return (
     <Container>
       <Header title="Currency Calculator" />
