@@ -1,5 +1,5 @@
 # Currency Calculator built with React.js
-![App screenshot](https://raw.githubusercontent.com/Gosia-Ras/react_currency_calculator/main/public/calculator-screenshot.png)
+![App screenshot](https://raw.githubusercontent.com/Gosia-Ras/react_currency_calculator/main/public/calculator-react.PNG)
 
 ## Demo: 
 https://gosia-ras.github.io/react_currency_calculator/ <- click here to see how it works
