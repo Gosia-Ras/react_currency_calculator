@@ -7,7 +7,7 @@ function App () {
 
   return (
     <Container>
-      <Header title="Currency Calculator" />
+      <Header title="Currency Calculator" link="Polish National Bank currency rates on 17.08.2021" />
       <Form />
       <Footer title="Copyright 2021 by Malgorzata Ras. All rights reserved." />
     </Container>
