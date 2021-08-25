@@ -7,16 +7,3 @@
     border: 1px solid black;
     box-shadow: 5px 5px 12px -9px #000000;
 }
-
-.header_link {
-    text-decoration: none;
-    font-style: oblique;
-}
-
-.header_link:hover {
-    color:rgb(110, 107, 107);
-}
-
-.header_link:active {
-    color:rgb(70, 67, 67)
-}
