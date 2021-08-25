@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/react_currency_calculator/static/css/main.13f685d4.chunk.css",
-    "main.js": "/react_currency_calculator/static/js/main.38f8018b.chunk.js",
-    "main.js.map": "/react_currency_calculator/static/js/main.38f8018b.chunk.js.map",
-    "runtime-main.js": "/react_currency_calculator/static/js/runtime-main.2cc32bed.js",
-    "runtime-main.js.map": "/react_currency_calculator/static/js/runtime-main.2cc32bed.js.map",
+    "main.css": "/react_currency_calculator/static/css/main.5632cdf5.chunk.css",
+    "main.js": "/react_currency_calculator/static/js/main.43fd1405.chunk.js",
+    "main.js.map": "/react_currency_calculator/static/js/main.43fd1405.chunk.js.map",
+    "runtime-main.js": "/react_currency_calculator/static/js/runtime-main.50f131c0.js",
+    "runtime-main.js.map": "/react_currency_calculator/static/js/runtime-main.50f131c0.js.map",
     "static/js/2.e10cdbdc.chunk.js": "/react_currency_calculator/static/js/2.e10cdbdc.chunk.js",
     "static/js/2.e10cdbdc.chunk.js.map": "/react_currency_calculator/static/js/2.e10cdbdc.chunk.js.map",
-    "static/js/3.ffc272a3.chunk.js": "/react_currency_calculator/static/js/3.ffc272a3.chunk.js",
-    "static/js/3.ffc272a3.chunk.js.map": "/react_currency_calculator/static/js/3.ffc272a3.chunk.js.map",
+    "static/js/3.d837ec64.chunk.js": "/react_currency_calculator/static/js/3.d837ec64.chunk.js",
+    "static/js/3.d837ec64.chunk.js.map": "/react_currency_calculator/static/js/3.d837ec64.chunk.js.map",
     "index.html": "/react_currency_calculator/index.html",
-    "static/css/main.13f685d4.chunk.css.map": "/react_currency_calculator/static/css/main.13f685d4.chunk.css.map",
+    "static/css/main.5632cdf5.chunk.css.map": "/react_currency_calculator/static/css/main.5632cdf5.chunk.css.map",
     "static/js/2.e10cdbdc.chunk.js.LICENSE.txt": "/react_currency_calculator/static/js/2.e10cdbdc.chunk.js.LICENSE.txt",
     "static/media/index.css": "/react_currency_calculator/static/media/background-calculator.6eb90087.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2cc32bed.js",
+    "static/js/runtime-main.50f131c0.js",
     "static/js/2.e10cdbdc.chunk.js",
-    "static/css/main.13f685d4.chunk.css",
-    "static/js/main.38f8018b.chunk.js"
+    "static/css/main.5632cdf5.chunk.css",
+    "static/js/main.43fd1405.chunk.js"
   ]
 }
