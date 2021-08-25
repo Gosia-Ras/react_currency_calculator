@@ -18,6 +18,7 @@ export const Form = () => {
       currency,
     });
   };
+  
   const onSubmit = (event) => {
     event.preventDefault();
     calculateResult(currency, amount);
