@@ -3,7 +3,7 @@
   "name": "Create React App Sample",
   "icons": [
     {
-      "src": "task-icon.png",
+      "src": "calculator-icon.png",
       "type": "image/png",
       "sizes": "192x192"
     }
