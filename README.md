@@ -23,5 +23,3 @@ Optional: Clicking on "reset" button after calculating will reset all the fields
 - React.js
 - Webpack
 - Babel
-
-![App functions](https://raw.githubusercontent.com/Gosia-Ras/react_currency_calculator/main/public/calculate.gif)
