@@ -12,3 +12,5 @@ export const Result = ({ result }) => (
     )}
   </p>
 );
+
+export default Result;

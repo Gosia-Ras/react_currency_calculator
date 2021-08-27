@@ -1,23 +1,11 @@
 import { useState } from "react";
 import "./style.css";
-import { Result } from "./Result";
 import { currencies } from "../currencies";
 
-export const Form = () => {
+export const Form = ({calculateResult, setResult}) => {
   const [currency, setCurrency] = useState(currencies[0].short);
+
   const [amount, setAmount] = useState("");
-
-  const [result, setResult] = useState();
-
-  const calculateResult = (currency, amount) => {
-    const rate = currencies.find(({ short }) => short === currency).rate;
-
-    setResult({
-      sourceAmount: +amount,
-      targetAmount: amount / rate,
-      currency,
-    });
-  };
 
   const onSubmit = (event) => {
     event.preventDefault();
@@ -63,7 +51,6 @@ export const Form = () => {
         </label>
       </fieldset>
       <div className="flexContainer">
-        <Result result={result} />
         <button className="form__button" type="submit">
           Calculate
         </button>
