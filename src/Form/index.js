@@ -1,8 +1,8 @@
 import { useState } from "react";
-import "./style.css";
 import { currencies } from "../currencies";
+import { StyledButton, StyledFieldset, StyledFlex, StyledForm, StyledInput, StyledLabel, StyledSelect } from "./styled";
 
-export const Form = ({calculateResult, setResult}) => {
+export const Form = ({ calculateResult, setResult }) => {
   const [currency, setCurrency] = useState(currencies[0].short);
 
   const [amount, setAmount] = useState("");
@@ -19,26 +19,24 @@ export const Form = ({calculateResult, setResult}) => {
   };
 
   return (
-    <form className="form" onSubmit={onSubmit}>
-      <fieldset className="form__fieldset">
-        <label className="form__label">
+    <StyledForm onSubmit={onSubmit}>
+      <StyledFieldset>
+        <StyledLabel>
           <p>Amount in PLN*:</p>
-          <input
+          <StyledInput
             value={amount}
             onChange={({ target }) => setAmount(target.value)}
             step="any"
             min="1"
             max="1000000000"
-            className="form__field"
             placeholder="Enter the amount in PLN"
             type="number"
             required
           />
-        </label>
-        <label className="form__label">
+        </StyledLabel>
+        <StyledLabel>
           <p>Currency</p>
-          <select
-            className="form__field"
+          <StyledSelect
             value={currency}
             onChange={({ target }) => setCurrency(target.value)}
           >
@@ -47,17 +45,15 @@ export const Form = ({calculateResult, setResult}) => {
                 {currency.short}
               </option>
             ))}
-          </select>
-        </label>
-      </fieldset>
-      <div className="flexContainer">
-        <button className="form__button" type="submit">
-          Calculate
-        </button>
-        <button type="reset" className="form__button" onClick={onClickReset}>
+          </StyledSelect>
+        </StyledLabel>
+      </StyledFieldset>
+      <StyledFlex>
+        <StyledButton type="submit">Calculate</StyledButton>
+        <StyledButton type="reset" onClick={onClickReset}>
           Clear form
-        </button>
-      </div>
-    </form>
+        </StyledButton>
+      </StyledFlex>
+    </StyledForm>
   );
 };
