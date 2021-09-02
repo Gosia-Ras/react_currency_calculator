@@ -1,7 +1,7 @@
-import "./style.css";
+import { StyledResult } from "./styled";
 
 export const Result = ({ result }) => (
-  <p className="resultParagraph">
+  <StyledResult>
     {result && (
       <>
         <strong>
@@ -10,7 +10,7 @@ export const Result = ({ result }) => (
         </strong>
       </>
     )}
-  </p>
+  </StyledResult>
 );
 
 export default Result;
