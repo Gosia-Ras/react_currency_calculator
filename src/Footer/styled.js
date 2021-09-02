@@ -1,0 +1,11 @@
+import styled from "styled-components";
+
+export const StyledFooter = styled.footer`
+  text-align: center;
+  background-color: whitesmoke;
+  padding: 10px;
+  font-family: "Lato", sans-serif;
+  font-style: bold;
+  margin-top: 20%;
+  color: rgb(0, 0, 0);
+`;
