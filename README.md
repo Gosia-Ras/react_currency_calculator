@@ -5,6 +5,7 @@
 https://gosia-ras.github.io/react_currency_calculator/ <- click here to see how it works
 
 A simple tool using JavaScript to calculate currency. The currency rates are set in currencies.js file. 
+Calculator includes a clock that show current time and date, it updates every 1 second.
 
 Project was made as a part of front-end development course at YouCode.
 
@@ -23,5 +24,3 @@ Optional: Clicking on "reset" button after calculating will reset all the fields
 - React.js
 - Webpack
 - Babel
-
-![App functions](https://raw.githubusercontent.com/Gosia-Ras/react_currency_calculator/main/public/calculate.gif)
