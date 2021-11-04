@@ -63,6 +63,7 @@ export const StyledFlex = styled.div`
 
 export const CurrencyInfo = styled.p`
   text-align: center;
+  font-size: smaller;
 `;
 
 export const Loading = styled.p`
