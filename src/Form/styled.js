@@ -40,6 +40,7 @@ export const StyledLabel = styled.label`
 
 export const StyledButton = styled.button`
   border: none;
+  border-radius: 10px;
   background-color: darkgrey;
   padding: 10px;
   max-width: 300px;
