@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import loading from "../loading.svg";
 
 export const StyledForm = styled.form`
   margin-top: 20px;
@@ -58,4 +59,23 @@ export const StyledFlex = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+`;
+
+export const CurrencyInfo = styled.p`
+  text-align: center;
+`;
+
+export const Loading = styled.p`
+  color: black;
+  background-image: url(${loading});
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 100%;
+  background-position: center;
+  text-align: center;
+`;
+
+export const Failure = styled.p`
+  color: red;
+  text-align: center;
 `;
