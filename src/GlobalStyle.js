@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import img from "./background-calculator.png"
-
+import img from "./background-calculator.png";
 
 export const GlobalStyle = createGlobalStyle`
     html {
@@ -19,4 +18,5 @@ export const GlobalStyle = createGlobalStyle`
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    font-family: 'Oxygen', sans-serif;
   }`;
