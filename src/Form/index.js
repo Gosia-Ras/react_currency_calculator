@@ -1,10 +1,35 @@
 import { useState } from "react";
-import { currencies } from "../currencies";
-import { StyledButton, StyledFieldset, StyledFlex, StyledForm, StyledInput, StyledLabel, StyledSelect } from "./styled";
+import {
+  StyledButton,
+  StyledFieldset,
+  StyledForm,
+  StyledLabel,
+  StyledFlex,
+  Loading,
+  Failure,
+  StyledInput,
+  StyledSelect,
+  CurrencyInfo,
+} from "./styled";
+import { Result } from "./Result";
 
-export const Form = ({ calculateResult, setResult }) => {
-  const [currency, setCurrency] = useState(currencies[0].short);
+import { useRatesData } from "../useRatesData";
 
+export const Form = (date) => {
+  const [result, setResult] = useState();
+  const ratesData = useRatesData();
+
+  const calculateResult = (currency, amount) => {
+    const rate = ratesData.rates[currency];
+
+    setResult({
+      sourceAmount: +amount,
+      targetAmount: amount * rate,
+      currency,
+    });
+  };
+
+  const [currency, setCurrency] = useState("EUR");
   const [amount, setAmount] = useState("");
 
   const onSubmit = (event) => {
@@ -20,40 +45,60 @@ export const Form = ({ calculateResult, setResult }) => {
 
   return (
     <StyledForm onSubmit={onSubmit}>
-      <StyledFieldset>
-        <StyledLabel>
-          <p>Amount in PLN*:</p>
-          <StyledInput
-            value={amount}
-            onChange={({ target }) => setAmount(target.value)}
-            step="any"
-            min="1"
-            max="1000000000"
-            placeholder="Enter the amount in PLN"
-            type="number"
-            required
-          />
-        </StyledLabel>
-        <StyledLabel>
-          <p>Currency</p>
-          <StyledSelect
-            value={currency}
-            onChange={({ target }) => setCurrency(target.value)}
-          >
-            {currencies.map((currency) => (
-              <option key={currency.short} value={currency.short}>
-                {currency.short}
-              </option>
-            ))}
-          </StyledSelect>
-        </StyledLabel>
-      </StyledFieldset>
-      <StyledFlex>
-        <StyledButton type="submit">Calculate</StyledButton>
-        <StyledButton type="reset" onClick={onClickReset}>
-          Clear form
-        </StyledButton>
-      </StyledFlex>
+      {ratesData.state === "loading" ? (
+        <Loading>
+          Loading the data from the European Central Bank <br />
+          Please wait
+        </Loading>
+      ) : ratesData.state === "error" ? (
+        <Failure>
+          Something went wrong <br />
+          Please check your internet connection and reload the page
+        </Failure>
+      ) : (
+        <>
+          <StyledFieldset>
+            <StyledLabel>
+              <p>Amount in PLN*:</p>
+              <StyledInput
+                value={amount}
+                onChange={({ target }) => setAmount(target.value)}
+                step="any"
+                min="1"
+                max="1000000000"
+                placeholder="Enter the amount in PLN"
+                type="number"
+                required
+              />
+            </StyledLabel>
+            <StyledLabel>
+              <p>Currency</p>
+
+              <StyledSelect
+                as="select"
+                value={currency}
+                onChange={({ target }) => setCurrency(target.value)}
+              >
+                {Object.keys(ratesData.rates).map((currency) => (
+                  <option key={currency} value={currency}>
+                    {currency}
+                  </option>
+                ))}
+              </StyledSelect>
+            </StyledLabel>
+          </StyledFieldset>
+          <CurrencyInfo>
+            Currency rates from the European Central Bank
+          </CurrencyInfo>
+          <StyledFlex>
+            <StyledButton type="submit">Calculate</StyledButton>
+            <StyledButton type="reset" onClick={onClickReset}>
+              Clear form
+            </StyledButton>
+          </StyledFlex>
+        </>
+      )}
+      <Result result={result} calculateResult={calculateResult}/>
     </StyledForm>
   );
 };
