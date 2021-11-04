@@ -9,7 +9,7 @@ export const useRatesData = () => {
     const fetchRates = async () => {
       try {
         const response = await fetch(
-          "https://api.exchangerate.host/latest?base=PLN"
+          "https://api.exchangerate.host/latest?base=PLN&symbols=USD,EUR,RUB,CZK,SEK,CNY,JPY"
         );
 
         if (!response.ok) {
