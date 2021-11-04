@@ -6,7 +6,8 @@ export const StyledForm = styled.form`
 `;
 
 export const StyledFieldset = styled.fieldset`
-  border-radius: 5px 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
   margin: 20px 0px;
   background-color: rgb(245, 245, 245);
   font-size: smaller;
