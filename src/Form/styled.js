@@ -39,12 +39,12 @@ export const StyledLabel = styled.label`
 `;
 
 export const StyledButton = styled.button`
-  border: 1px black solid;
-  background-color: rgb(255, 254, 254);
-  box-shadow: 5px 5px 12px -9px #000000;
+  border: none;
+  background-color: darkgrey;
   padding: 10px;
   max-width: 300px;
   margin-top: 5px;
+  transition: background 1s;
 
   &:hover {
     background-color: rgb(129, 126, 127);
