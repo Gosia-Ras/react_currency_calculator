@@ -10,6 +10,7 @@ import {
   StyledInput,
   StyledSelect,
   CurrencyInfo,
+  Link,
 } from "./styled";
 import { Result } from "./Result";
 
@@ -88,7 +89,7 @@ export const Form = (date) => {
             </StyledLabel>
           </StyledFieldset>
           <CurrencyInfo>
-            Currency rates from the European Central Bank
+            Currency rates from the <Link href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">European Central Bank</Link>
           </CurrencyInfo>
           <StyledFlex>
             <StyledButton type="submit">Calculate</StyledButton>

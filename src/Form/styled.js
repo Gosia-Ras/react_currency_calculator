@@ -33,8 +33,8 @@ export const StyledSelect = styled.select`
   background-repeat: no-repeat;
 
   &:hover {
-    background-image: linear-gradient(45deg,  #343f51 50%, transparent 50%),
-      linear-gradient(135deg, transparent 50%,  #343f51 50%),
+    background-image: linear-gradient(45deg, #343f51 50%, transparent 50%),
+      linear-gradient(135deg, transparent 50%, #343f51 50%),
       linear-gradient(to right, #ccc, #ccc);
     background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em,
       calc(100% - 2.5em) 0.5em;
@@ -105,4 +105,16 @@ export const Loading = styled.p`
 export const Failure = styled.p`
   color: red;
   text-align: center;
+`;
+
+export const Link = styled.a`
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: #343F51;
+  }
 `;
