@@ -15,15 +15,41 @@ export const StyledFieldset = styled.fieldset`
 `;
 
 export const StyledSelect = styled.select`
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   padding: 10px;
   border-radius: 4px;
-	box-shadow: 1px 1px 4px #DADADA;
+  box-shadow: 1px 1px 4px #dadada;
+  background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+
+  &:hover {
+    background-image: linear-gradient(45deg,  #343f51 50%, transparent 50%),
+      linear-gradient(135deg, transparent 50%,  #343f51 50%),
+      linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em,
+      calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    background-repeat: no-repeat;
+    border-color: grey;
+    outline: 0;
+  }
 `;
+
 export const StyledInput = styled.input`
   padding: 10px;
   border-radius: 4px;
-	color: #fff;
-	box-shadow: 1px 1px 4px #DADADA;
+  color: #fff;
+  box-shadow: 1px 1px 4px #dadada;
 
   &:required {
     border: 1px grey solid;
@@ -44,7 +70,7 @@ export const StyledLabel = styled.label`
 export const StyledButton = styled.button`
   border: none;
   border-radius: 10px;
-  background-color: #343F51;
+  background-color: #343f51;
   color: lightgrey;
   padding: 10px;
   max-width: 300px;
@@ -52,7 +78,7 @@ export const StyledButton = styled.button`
   transition: background 1s;
 
   &:hover {
-    background-color: #3D4F66;
+    background-color: #3d4f66;
   }
 `;
 
