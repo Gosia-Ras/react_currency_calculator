@@ -15,8 +15,9 @@ export const GlobalStyle = createGlobalStyle`
     background-size: cover;
     background-image: url(${background_img});
     background-position: center;
+    color: #343F51;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
   }`;
