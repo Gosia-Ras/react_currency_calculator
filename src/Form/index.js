@@ -89,7 +89,7 @@ export const Form = (date) => {
             </StyledLabel>
           </StyledFieldset>
           <CurrencyInfo>
-            Currency rates from the <Link href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">European Central Bank</Link>
+            Currency rates from the <Link title="European Central Bank" rel="noreferrer noopener" target="_blank" href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">European Central Bank</Link>
           </CurrencyInfo>
           <StyledFlex>
             <StyledButton type="submit">Calculate</StyledButton>
