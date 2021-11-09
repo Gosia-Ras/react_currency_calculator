@@ -16,16 +16,17 @@ export const StyledFieldset = styled.fieldset`
 
 export const StyledSelect = styled.select`
   padding: 10px;
-  background-color: white;
   border-radius: 4px;
+	box-shadow: 1px 1px 4px #DADADA;
 `;
 export const StyledInput = styled.input`
   padding: 10px;
-  background-color: white;
   border-radius: 4px;
+	color: #fff;
+	box-shadow: 1px 1px 4px #DADADA;
 
   &:required {
-    border-color: rgb(224, 107, 107);
+    border: 1px grey solid;
   }
 `;
 
@@ -43,15 +44,15 @@ export const StyledLabel = styled.label`
 export const StyledButton = styled.button`
   border: none;
   border-radius: 10px;
-  background-color: darkgrey;
+  background-color: #343F51;
+  color: lightgrey;
   padding: 10px;
   max-width: 300px;
   margin-top: 5px;
   transition: background 1s;
 
   &:hover {
-    background-color: rgb(129, 126, 127);
-    color: lavenderblush;
+    background-color: #3D4F66;
   }
 `;
 

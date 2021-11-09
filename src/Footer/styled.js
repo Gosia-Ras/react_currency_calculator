@@ -7,5 +7,5 @@ export const StyledFooter = styled.footer`
   font-family: "Lato", sans-serif;
   font-style: bold;
   margin-top: 20%;
-  color: rgb(0, 0, 0);
+  color: #5B626B;
 `;
