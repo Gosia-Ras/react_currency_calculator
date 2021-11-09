@@ -7,7 +7,7 @@ export const useRatesData = () => {
   });
 
   useEffect(() => {
-    const fetchRates = async () => {
+    const getRates = async () => {
       try {
         const response = await axios.get(
           "https://api.exchangerate.host/latest?base=PLN&symbols=USD,EUR,RUB,CZK,SEK,CNY,JPY"
@@ -27,7 +27,7 @@ export const useRatesData = () => {
         });
       }
     };
-    setTimeout(fetchRates, 1500);
+    setTimeout(getRates, 1500);
   }, []);
 
   return ratesData;
