@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.js": "/react_currency_calculator/static/js/main.c56a65d3.chunk.js",
-    "main.js.map": "/react_currency_calculator/static/js/main.c56a65d3.chunk.js.map",
-    "runtime-main.js": "/react_currency_calculator/static/js/runtime-main.05338b26.js",
-    "runtime-main.js.map": "/react_currency_calculator/static/js/runtime-main.05338b26.js.map",
-    "static/js/2.b617cfaf.chunk.js": "/react_currency_calculator/static/js/2.b617cfaf.chunk.js",
-    "static/js/2.b617cfaf.chunk.js.map": "/react_currency_calculator/static/js/2.b617cfaf.chunk.js.map",
-    "static/js/3.0c9d7699.chunk.js": "/react_currency_calculator/static/js/3.0c9d7699.chunk.js",
-    "static/js/3.0c9d7699.chunk.js.map": "/react_currency_calculator/static/js/3.0c9d7699.chunk.js.map",
+    "main.js": "/react_currency_calculator/static/js/main.46712233.chunk.js",
+    "main.js.map": "/react_currency_calculator/static/js/main.46712233.chunk.js.map",
+    "runtime-main.js": "/react_currency_calculator/static/js/runtime-main.2a187ce3.js",
+    "runtime-main.js.map": "/react_currency_calculator/static/js/runtime-main.2a187ce3.js.map",
+    "static/js/2.f8feef24.chunk.js": "/react_currency_calculator/static/js/2.f8feef24.chunk.js",
+    "static/js/2.f8feef24.chunk.js.map": "/react_currency_calculator/static/js/2.f8feef24.chunk.js.map",
+    "static/js/3.08651ed6.chunk.js": "/react_currency_calculator/static/js/3.08651ed6.chunk.js",
+    "static/js/3.08651ed6.chunk.js.map": "/react_currency_calculator/static/js/3.08651ed6.chunk.js.map",
     "index.html": "/react_currency_calculator/index.html",
-    "static/js/2.b617cfaf.chunk.js.LICENSE.txt": "/react_currency_calculator/static/js/2.b617cfaf.chunk.js.LICENSE.txt",
-    "static/media/background-calculator.6eb90087.png": "/react_currency_calculator/static/media/background-calculator.6eb90087.png"
+    "static/js/2.f8feef24.chunk.js.LICENSE.txt": "/react_currency_calculator/static/js/2.f8feef24.chunk.js.LICENSE.txt",
+    "static/media/loading.659de695.svg": "/react_currency_calculator/static/media/loading.659de695.svg",
+    "static/media/money.ec30bde7.jpeg": "/react_currency_calculator/static/media/money.ec30bde7.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.05338b26.js",
-    "static/js/2.b617cfaf.chunk.js",
-    "static/js/main.c56a65d3.chunk.js"
+    "static/js/runtime-main.2a187ce3.js",
+    "static/js/2.f8feef24.chunk.js",
+    "static/js/main.46712233.chunk.js"
   ]
 }
