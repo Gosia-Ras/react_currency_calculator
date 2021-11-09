@@ -48,7 +48,6 @@ export const StyledSelect = styled.select`
 export const StyledInput = styled.input`
   padding: 10px;
   border-radius: 4px;
-  color: #fff;
   box-shadow: 1px 1px 4px #dadada;
 
   &:required {
