@@ -1,9 +1,10 @@
 import { createGlobalStyle } from "styled-components";
-import img from "./background-calculator.png";
+import background_img from "./money.jpeg"
 
 export const GlobalStyle = createGlobalStyle`
     html {
         box-sizing: border-box;
+        overflow-y: scroll;
      }
   
   *, ::after, ::before {
@@ -12,11 +13,10 @@ export const GlobalStyle = createGlobalStyle`
   
   #root {
     background-size: cover;
-    background-image: url(${img});
+    background-image: url(${background_img});
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
     font-family: 'Oxygen', sans-serif;
   }`;
