@@ -4,8 +4,8 @@ export const StyledFooter = styled.footer`
   text-align: center;
   background-color: whitesmoke;
   padding: 10px;
-  font-family: "Lato", sans-serif;
-  font-style: bold;
-  margin-top: 20%;
+  font-size: small;
+  font-style: italic;
+  margin-top: 30px;
   color: #5B626B;
 `;
