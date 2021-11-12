@@ -49,11 +49,11 @@ export const Form = (date) => {
       {ratesData.state === "loading" ? (
         <Loading>
           Loading the data from the European Central Bank <br />
-          Please wait
+          Please wait...
         </Loading>
       ) : ratesData.state === "error" ? (
         <Failure>
-          Something went wrong <br />
+          Something went wrong! <br />
           Please check your internet connection and reload the page
         </Failure>
       ) : (
