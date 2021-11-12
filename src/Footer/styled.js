@@ -8,4 +8,8 @@ export const StyledFooter = styled.footer`
   font-style: italic;
   margin-top: 30px;
   color: #5B626B;
+
+  @media (max-width: 320px) {
+    background-color: transparent;
+  };
 `;
