@@ -63,6 +63,7 @@ export const StyledLabel = styled.label`
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
+    align-items: stretch;
   }
 `;
 

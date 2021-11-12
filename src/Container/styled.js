@@ -7,8 +7,4 @@ export const StyledContainer = styled.div`
   padding: 15px;
   max-height: 100vh;
   margin-top: 40px;
-
-  @media (max-width: 768px) {
-    width: 100%;
-  };
 `

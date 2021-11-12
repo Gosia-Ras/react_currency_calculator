@@ -22,4 +22,8 @@ export const GlobalStyle = createGlobalStyle`
     align-items: center;
     justify-content: center;
     font-family: 'Titillium Web', sans-serif;
-  }`;
+
+    @media (max-width: 768px) {
+      min-height: 100vh;
+    };
+  }`
