@@ -3,7 +3,6 @@ import loading from "../loading.svg";
 
 export const StyledForm = styled.form`
   margin-top: 20px;
-  font-family: "Lato", sans-serif;
 `;
 
 export const StyledFieldset = styled.fieldset`
