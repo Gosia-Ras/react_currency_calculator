@@ -7,4 +7,9 @@ export const StyledContainer = styled.div`
   padding: 15px;
   max-height: 100vh;
   margin-top: 40px;
+
+  @media (max-width: 320px) {
+    max-height: fit-content;
+    background-color: #f5f5f5d6;
+  };
 `
