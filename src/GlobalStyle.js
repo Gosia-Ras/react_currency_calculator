@@ -17,13 +17,15 @@ export const GlobalStyle = createGlobalStyle`
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    color: #343F51;
+    color: ${({ theme}) => theme.color.secondary};
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Titillium Web', sans-serif;
 
-    @media (max-width: 768px) {
-      min-height: 100vh;
-    };
+    @media (max-width: 1920px) {
+      min-height: fit-content;
+    }
   }`
+
+
