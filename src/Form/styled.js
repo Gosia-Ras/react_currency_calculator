@@ -6,10 +6,9 @@ export const StyledForm = styled.form`
 `;
 
 export const StyledFieldset = styled.fieldset`
-  border: 1px solid grey;
+  border: ${({ theme }) => theme.color.tertiary} 1px solid;
   border-radius: 5px;
   margin: 20px 0px;
-  background-color: rgb(245, 245, 245);
   font-size: smaller;
 `;
 
@@ -22,7 +21,7 @@ export const StyledSelect = styled.select`
   -moz-appearance: none;
   padding: 10px;
   border-radius: 4px;
-  box-shadow: 1px 1px 4px #dadada;
+  box-shadow: 1px 1px 4px ${({ theme }) => theme.accent.shadowSelect};
   background-image: linear-gradient(45deg, transparent 50%, gray 50%),
     linear-gradient(135deg, gray 50%, transparent 50%),
     linear-gradient(to right, #ccc, #ccc);
@@ -39,7 +38,6 @@ export const StyledSelect = styled.select`
       calc(100% - 2.5em) 0.5em;
     background-size: 5px 5px, 5px 5px, 1px 1.5em;
     background-repeat: no-repeat;
-    border-color: grey;
     outline: 0;
   }
 `;
@@ -47,10 +45,10 @@ export const StyledSelect = styled.select`
 export const StyledInput = styled.input`
   padding: 10px;
   border-radius: 4px;
-  box-shadow: 1px 1px 4px #dadada;
+  box-shadow: 1px 1px 4px ${({ theme }) => theme.accent.boxGrey};
 
   &:required {
-    border: 1px grey solid;
+    border: ${({ theme }) => theme.color.tertiary} 1px solid;
   }
 `;
 
@@ -69,15 +67,15 @@ export const StyledLabel = styled.label`
 export const StyledButton = styled.button`
   border: none;
   border-radius: 10px;
-  background-color: #343f51;
-  color: lightgrey;
+  background-color: ${({ theme }) => theme.color.secondary};
+  color: ${({ theme }) => theme.color.tertiary};
   padding: 10px;
   max-width: 300px;
   margin-top: 5px;
   transition: background 1s;
 
   &:hover {
-    background-color: #3d4f66;
+    background-color: ${({ theme }) => theme.button.hover};
   }
 `;
 
@@ -93,7 +91,7 @@ export const CurrencyInfo = styled.p`
 `;
 
 export const Loading = styled.p`
-  color: black;
+  color: ${({ theme }) => theme.color.primary};
   background-image: url(${loading});
   background-repeat: no-repeat;
   height: 150px;
@@ -103,7 +101,7 @@ export const Loading = styled.p`
 `;
 
 export const Failure = styled.p`
-  color: red;
+  color: ${({ theme }) => theme.accent.failure};
   text-align: center;
 `;
 
@@ -115,6 +113,6 @@ export const Link = styled.a`
   }
 
   &:visited {
-    color: #343F51;
+    color: ${({ theme }) => theme.color.secondary};
   }
 `;
