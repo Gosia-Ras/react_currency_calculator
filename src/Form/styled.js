@@ -13,15 +13,17 @@ export const StyledFieldset = styled.fieldset`
 `;
 
 export const StyledSelect = styled.select`
-  margin: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
   padding: 10px;
+  border: ${({ theme }) => theme.color.tertiary} 1px solid;
   border-radius: 4px;
-  box-shadow: 1px 1px 4px ${({ theme }) => theme.accent.shadowSelect};
+  -webkit-box-shadow: 4px 3px 9px -7px ${({ theme }) => theme.accent.boxGrey};
+  -moz-box-shadow: 4px 3px 9px -7px ${({ theme }) => theme.accent.boxGrey};
+  box-shadow: 4px 3px 9px -7px ${({ theme }) => theme.accent.boxGrey};
   background-image: linear-gradient(45deg, transparent 50%, gray 50%),
     linear-gradient(135deg, gray 50%, transparent 50%),
     linear-gradient(to right, #ccc, #ccc);
@@ -37,15 +39,15 @@ export const StyledSelect = styled.select`
     background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em,
       calc(100% - 2.5em) 0.5em;
     background-size: 5px 5px, 5px 5px, 1px 1.5em;
-    background-repeat: no-repeat;
-    outline: 0;
   }
 `;
 
 export const StyledInput = styled.input`
   padding: 10px;
   border-radius: 4px;
-  box-shadow: 1px 1px 4px ${({ theme }) => theme.accent.boxGrey};
+  -webkit-box-shadow: 4px 3px 9px -7px ${({ theme }) => theme.accent.boxGrey};
+  -moz-box-shadow: 4px 3px 9px -7px ${({ theme }) => theme.accent.boxGrey};
+  box-shadow: 4px 3px 9px -7px ${({ theme }) => theme.accent.boxGrey};
 
   &:required {
     border: ${({ theme }) => theme.color.tertiary} 1px solid;

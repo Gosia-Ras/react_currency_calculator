@@ -4,7 +4,7 @@ const colorNames = {
   grey: "#ADADAD",
   hover: "#3d4f66",
   lightGrey: "#6E747C",
-  boxGrey: "#dadada",
+  boxGrey: "#8E9195",
   arrowGrey: "ccc",
   red: "#A51818"
 };
