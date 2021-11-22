@@ -10,15 +10,19 @@ export const GlobalStyle = createGlobalStyle`
   *, ::after, ::before {
     box-sizing: inherit;
   }
+
+  body {
+    background: url(${background_img}) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
   
   #root {
-    background: url(${background_img});
-    background-size: cover;
-    color: ${({ theme}) => theme.color.secondary};
+    color: ${({ theme }) => theme.color.secondary};
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Titillium Web', sans-serif;
-  }`
-
-
+  }`;
