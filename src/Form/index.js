@@ -67,7 +67,7 @@ export const Form = (date) => {
                 step="any"
                 min="1"
                 max="1000000000"
-                placeholder="Enter the amount in PLN"
+                placeholder="Amount in PLN"
                 type="number"
                 required
               />
