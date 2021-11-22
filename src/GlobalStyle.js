@@ -12,20 +12,13 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   #root {
-    background: url(${background_img}) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url(${background_img});
     background-size: cover;
     color: ${({ theme}) => theme.color.secondary};
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Titillium Web', sans-serif;
-
-    @media (max-width: 1920px) {
-      min-height: fit-content;
-    }
   }`
 
 
