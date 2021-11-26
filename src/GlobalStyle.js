@@ -17,12 +17,6 @@ export const GlobalStyle = createGlobalStyle`
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  }
-  
-  #root {
     color: ${({ theme }) => theme.color.secondary};
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-family: 'Titillium Web', sans-serif;
   }`;
