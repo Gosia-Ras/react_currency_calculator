@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 export const useRatesData = () => {
-  const [ratesData, setRatesData] = useState({
+  const [ratesStore, setRatesData] = useState({
     state: "loading",
   });
 
@@ -30,5 +30,5 @@ export const useRatesData = () => {
     setTimeout(getRates, 1500);
   }, []);
 
-  return ratesData;
+  return ratesStore;
 };
