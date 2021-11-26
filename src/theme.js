@@ -27,10 +27,6 @@ export const theme = {
     shadowSelect: colorNames.boxGrey,
     failure: colorNames.red,
   },
-  breakpoint: {
-    mobile: "320px",
-    tablet: "768px",
-  },
   images: {
     loading: loadingGif,
     background: backgroundImg,

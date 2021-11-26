@@ -8,4 +8,9 @@ export const StyledContainer = styled.div`
   max-width: 50vh;
   margin: 0 auto;
   margin-top: 150px;
+
+  @media (max-width: 480px) {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  } ;
 `
