@@ -38,7 +38,7 @@ export const Form = (date) => {
     calculateResult(currency, amount);
   };
 
-  const onClickReset = (event) => {
+  const onReset = (event) => {
     event.preventDefault();
     setAmount("");
     setResult();
@@ -91,7 +91,7 @@ export const Form = (date) => {
 
           <StyledFlex>
             <StyledButton type="submit">Calculate</StyledButton>
-            <StyledButton type="reset" onClick={onClickReset}>
+            <StyledButton type="reset" onClick={onReset}>
               Clear form
             </StyledButton>
           </StyledFlex>
