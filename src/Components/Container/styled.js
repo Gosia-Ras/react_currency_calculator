@@ -7,5 +7,5 @@ export const StyledContainer = styled.div`
   padding: 15px;
   max-width: 50vh;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 150px;
 `
