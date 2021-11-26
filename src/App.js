@@ -1,8 +1,8 @@
-import Container from "./Container";
-import Header from "./Header";
-import { Form } from "./Form";
-import Footer from "./Footer";
-import Clock from "./Clock";
+import Container from "./Components/Container";
+import Header from "./Components/Header";
+import { Form } from "./Components/Form";
+import Footer from "./Components/Footer";
+import Clock from "./Components/Clock";
 
 function App() {
   return (

@@ -14,7 +14,7 @@ import {
 } from "./styled";
 import { Result } from "./Result";
 
-import { useRatesData } from "../useRatesData";
+import { useRatesData } from "./useRatesData";
 
 export const Form = (date) => {
   const [result, setResult] = useState();
