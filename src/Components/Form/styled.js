@@ -93,7 +93,7 @@ export const CurrencyInfo = styled.p`
 
 export const Loading = styled.p`
   color: ${({ theme }) => theme.color.primary};
-  background-image: ${({ theme }) => theme.images.loading};
+  background-image: url(${({ theme }) => theme.images.loading});
   background-repeat: no-repeat;
   height: 150px;
   width: 100%;
