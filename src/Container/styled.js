@@ -5,5 +5,7 @@ export const StyledContainer = styled.div`
   border-radius: 25px;
   box-shadow: 10px 10px 13px -7px ${({ theme}) => theme.color.tertiary};
   padding: 15px;
-  margin-top: 40px;
+  max-width: 50vh;
+  margin: 0 auto;
+  margin-top: 100px;
 `
