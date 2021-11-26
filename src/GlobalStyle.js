@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import background_img from "./money.jpeg";
 
 export const GlobalStyle = createGlobalStyle`
     html {
@@ -12,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: url(${background_img}) no-repeat center center fixed;
+    background: ${({ theme }) => theme.images.background};
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

@@ -1,3 +1,6 @@
+import loadingGif from "./Images/loading.svg";
+import backgroundImg from "./Images/money.jpeg";
+
 const colorNames = {
   oxfordBlue: "#343F51",
   whitesmoke: "#f5f5f5",
@@ -6,7 +9,7 @@ const colorNames = {
   lightGrey: "#6E747C",
   boxGrey: "#8E9195",
   arrowGrey: "ccc",
-  red: "#A51818"
+  red: "#A51818",
 };
 
 export const theme = {
@@ -27,5 +30,9 @@ export const theme = {
   breakpoint: {
     mobile: "320px",
     tablet: "768px",
+  },
+  images: {
+    loading: loadingGif,
+    background: backgroundImg,
   },
 };
