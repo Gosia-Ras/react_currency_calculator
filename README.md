@@ -15,6 +15,7 @@ Project was made as a part of front-end development course at YouCode.
 2. Pick the currency. List of currencies has been limited.
 3. Click the "calculate" button to run the function. 
 Optional: Clicking on "reset" button after calculating will reset all the fields.
+
 ![Gif](https://raw.githubusercontent.com/Gosia-Ras/react_currency_calculator/main/public/calculate.gif)
 
 ## Used tools:
