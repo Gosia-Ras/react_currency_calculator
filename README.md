@@ -23,10 +23,10 @@ Optional: Clicking on "reset" button after calculating will reset all the fields
 - CSS-Flex
 - CSS-Grid
 - Media queries
-- Styled Components
+- Styled-components
 - JS/ES6+
 - Immutability
-- React.js
-- Asynchronity/hooks (useState, useEffect, custom hooks)
+- React
+- Asynchronity/hooks (useState, useEffect, custom Hooks)
 - Async/await
 - Axios
