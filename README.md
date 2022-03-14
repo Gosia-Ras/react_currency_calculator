@@ -1,4 +1,4 @@
-# Currency Calculator built with React.js
+# Currency Calculator
 ![App screenshot](https://raw.githubusercontent.com/Gosia-Ras/react_currency_calculator/main/public/calculator-screenshot.JPG)
 
 ## Demo: 
