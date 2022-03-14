@@ -10,7 +10,7 @@ function App() {
       <Header title="Currency Calculator" />
       <Clock />
       <Form />
-      <Footer title="Copyright 2021 by Malgorzata Ras. All rights reserved." />
+      <Footer title="Coded in 2021 by Gosia Ras. All&nbsp;rights reserved." />
     </Container>
   );
 }

@@ -1,34 +1,14 @@
-import loadingGif from "./Images/loading.svg";
-import backgroundImg from "./Images/money.jpeg";
-
-const colorNames = {
-  oxfordBlue: "#343F51",
-  whitesmoke: "#f5f5f5",
-  grey: "#ADADAD",
-  hover: "#3d4f66",
-  lightGrey: "#6E747C",
-  boxGrey: "#8E9195",
-  arrowGrey: "ccc",
-  red: "#A51818",
-};
-
 export const theme = {
-  color: {
-    primary: colorNames.whitesmoke,
-    secondary: colorNames.oxfordBlue,
-    tertiary: colorNames.grey,
-  },
-  button: {
-    hover: colorNames.hover,
-  },
-  accent: {
-    clock: colorNames.lightGrey,
-    selectArrow: colorNames.arrowGrey,
-    shadowSelect: colorNames.boxGrey,
-    failure: colorNames.red,
-  },
-  images: {
-    loading: loadingGif,
-    background: backgroundImg,
+  colors: {
+    backgroundMain: " #b2bec3",
+    backgroundBlue: "#0984e3",
+    fontMain: "#dfe6e9",
+    clock: "#81ecec",
+    hoverBlue: "#74b9ff",
+    darkGrey: "#636e72",
+    buttonDefault: "#00cec9",
+    error: "#00b894",
+    shadowError: "#81ecec",
+    errorYellow: "#fdcb6e",
   },
 };

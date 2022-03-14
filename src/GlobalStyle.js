@@ -11,11 +11,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: url(${({ theme }) => theme.images.background}) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: ${({ theme }) => theme.color.secondary};
-    font-family: 'Titillium Web', sans-serif;
+    
+    color: ${({ theme }) => theme.colors.fontMain};
+    font-family: 'Inter', sans-serif;
+    background-color: ${({ theme }) => theme.colors.backgroundMain};;
   }`;

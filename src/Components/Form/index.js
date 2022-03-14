@@ -5,14 +5,15 @@ import {
   StyledForm,
   StyledLabel,
   StyledFlex,
-  Loading,
-  Failure,
   StyledInput,
   StyledSelect,
   CurrencyInfo,
   Link,
+  CurrencySpan,
 } from "./styled";
 import { Result } from "./Result";
+import { Loader } from "./Loader";
+import { Error } from "./Error";
 
 import { useRatesData } from "./useRatesData";
 
@@ -48,20 +49,14 @@ export const Form = () => {
   return (
     <StyledForm onSubmit={onSubmit}>
       {ratesData.state === "loading" ? (
-        <Loading>
-          Loading the data from the European Central Bank <br />
-          Please wait...
-        </Loading>
+        <Loader />
       ) : ratesData.state === "error" ? (
-        <Failure>
-          Something went wrong! <br />
-          Please check your internet connection and reload the page
-        </Failure>
+        <Error />
       ) : (
         <>
           <StyledFieldset>
             <StyledLabel>
-              <p>Amount in PLN*:</p>
+              <CurrencySpan>Amount in PLN</CurrencySpan>
               <StyledInput
                 value={amount}
                 onChange={({ target }) => setAmount(target.value)}
@@ -74,7 +69,7 @@ export const Form = () => {
               />
             </StyledLabel>
             <StyledLabel>
-              <p>Currency</p>
+              <CurrencySpan>Currency</CurrencySpan>
 
               <StyledSelect
                 as="select"
